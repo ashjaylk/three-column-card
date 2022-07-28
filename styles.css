@@ -1,0 +1,106 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: auto auto;
+    width: fit-content;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3em 2em;
+    border-radius: 10px 0 0 10px;
+    width: fit-content;
+    max-width: 300px;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3em 2em;
+    width: fit-content;
+    max-width: 300px
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 3em 2em;
+    border-radius: 0 10px 10px 0;
+    width: fit-content;
+    max-width: 300px
+}
+
+.topic {
+    color:  hsl(0, 0%, 95%);
+    margin: 1.5em auto;
+}
+
+.text {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid #fff;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 1em 2em;
+}
+
+#sedans-button {
+    color: hsl(31, 77%, 52%);
+}
+
+#sedans-button:active {
+    color: #fff;
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suv-button {
+    color: hsl(184, 100%, 22%);
+}
+
+#suv-button:active {
+    color: #fff;
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury-button {
+    color: hsl(179, 100%, 13%);
+}
+
+#luxury-button:active {
+    color: #fff;
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media(max-width:600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+    button{
+        margin: 3em auto;
+    }
+}
+
+@media(min-width:600px) {
+    main {
+        margin: 4em 5em;
+    }
+    button {
+        margin: 3em auto;
+    }
+    .text {
+        margin: 2em auto;
+    }
+}
